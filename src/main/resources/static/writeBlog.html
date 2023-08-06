@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑博客</title>
+</head>
+<body>
+<form action="/myBlog/write">
+    <label>
+        <input name="user_id" placeholder="qxcnwu" value="qxcnwu">
+    </label>
+    <label>
+        <input name="title" placeholder="aaaaaaaa" value="aaaaaaaa">
+    </label>
+    <label>
+        <input name="description" placeholder="bbbbbbbbbbb" value="bbbbbbbbbbb">
+    </label>
+    <label>
+        <input name="content" placeholder="cccccccccc" value="cccc">
+    </label>
+    <label>
+        <input name="created" placeholder="2022/2/24" value="2022/2/24">
+    </label>
+    <label>
+        <input name="status" placeholder="1" value="1">
+    </label>
+    <label>
+        <input name="statusCode" placeholder="0" value="0">
+    </label>
+    <input type="submit" placeholder="提交">
+</form>
+<form action="/myBlog/all" method="post">
+    <input type="submit" placeholder="查询所有">
+</form>
+
+<form action="/myBlog/all/5/2" method="post">
+    <input type="submit" placeholder="分页查询">
+</form>
+
+<form action="/myBlog/delete/14">
+    <input type="submit" placeholder="删除">
+</form>
+</body>
+</html>
